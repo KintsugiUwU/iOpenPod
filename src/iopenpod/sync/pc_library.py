@@ -1656,7 +1656,7 @@ class PCLibrary:
                     pass
 
             # Lyrics presence
-            lyrics = audio.tags.get("lyrics")
+            lyrics = audio.tags.get("unsyncedlyrics") or audio.tags.get("lyrics")
             if lyrics and len(lyrics) > 0 and str(lyrics[0]).strip():
                 metadata["has_lyrics"] = True
                 metadata["lyrics"] = str(lyrics[0]).strip()
