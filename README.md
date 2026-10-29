@@ -1,5 +1,20 @@
 # iOpenPod: Free iPod Manager and iTunes Alternative
 
+> [!NOTE]
+> **This is a fork of [TheRealSavi/iOpenPod](https://github.com/TheRealSavi/iOpenPod)
+> that adds two-way Jellyfin play count sync.**
+>
+> I wanted to contribute it upstream, but I can't open a pull request there: the
+> maintainer has blocked my GitHub account, and GitHub refuses the request with
+> "user is blocked". Until that changes, the feature lives here. Everything else is
+> the official iOpenPod, kept up to date with upstream `main`.
+>
+> * Setup and how play counts are merged: [docs/jellyfin.md](docs/jellyfin.md).
+> * The downloads and in-app updates described below come from the official project
+>   and don't include Jellyfin sync. To use it, clone this fork and run it from
+>   source as in [Develop and contribute](#develop-and-contribute)
+>   (`uv sync --locked`, then `uv run iopenpod`), and update with `git pull`.
+
 **Your music. Your iPod.**
 
 [![License: GPL-3.0-or-later](https://img.shields.io/badge/License-GPL--3.0--or--later-blue.svg?style=plastic)](https://github.com/TheRealSavi/iOpenPod/blob/main/LICENSE)
